@@ -10,7 +10,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 
-class MahasiswaAdapter extends
+public class MahasiswaAdapter extends
         RecyclerView.Adapter<MahasiswaAdapter.MahasiswaViewHolder>{
     private ArrayList<Mahasiswa> dataList;
     public MahasiswaAdapter(ArrayList<Mahasiswa> dataList) {
@@ -51,3 +51,4 @@ class MahasiswaAdapter extends
         }
     }
 }
+
