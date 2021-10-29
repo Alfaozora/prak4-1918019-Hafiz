@@ -4,15 +4,23 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import android.widget.ImageView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 
-public class MahasiswaAdapter extends
-        RecyclerView.Adapter<MahasiswaAdapter.MahasiswaViewHolder>{
+public class MahasiswaAdapter extends RecyclerView.Adapter<MahasiswaAdapter.MahasiswaViewHolder>{
     private ArrayList<Mahasiswa> dataList;
+    static class ViewHolder extends RecyclerView.ViewHolder{
+        ImageView imageIcon;
+
+        ViewHolder(View v){
+            super(v);
+            imageIcon = v.findViewById(R.id.image);
+        }
+    }
     public MahasiswaAdapter(ArrayList<Mahasiswa> dataList) {
         this.dataList = dataList;
     }

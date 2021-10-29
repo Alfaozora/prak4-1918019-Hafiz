@@ -11,19 +11,44 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:padding="5dp"
-        android:layout_margin="5dp">
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/txt_nama"/>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/txt_nim"/>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/txt_angkatan"/>
-    </LinearLayout>
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/profile_image"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/gambar"
+                app:civ_border_color="#2196F3"
+                app:civ_border_width="3dp"
+                android:layout_gravity="center"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/txt_nama"
+                    android:layout_width="304dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/txt_nim"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/txt_angkatan"/>
+            </LinearLayout>
+        </LinearLayout>
+        </LinearLayout>
 </androidx.cardview.widget.CardView>
